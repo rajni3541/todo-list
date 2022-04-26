@@ -17,6 +17,10 @@ class TodoList extends React.Component {
     });
   };
   addTodo = () => {
+    if (this.state.input.length === 0) {
+      alert("Enter something");
+      return;
+    }
     this.setState((state) => {
       return {
         ...state,
