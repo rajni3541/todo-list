@@ -1,10 +1,9 @@
 import React from "react";
 
-import "./TodoApp.style.css";
 
 import TodoItem from "./TodoItem.component";
 
-class TodoApp extends React.Component {
+class TodoList extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -30,11 +29,11 @@ class TodoApp extends React.Component {
   };
   render() {
     return (
-      <React.Fragment>
-        <div className="add-todo">
+      <>
+        <div>
           <input
             type="text"
-            placeholder="Add Todo"
+            placeholder="add ur todo list"
             onChange={this.inputHandler}
             value={this.state.input}
           />
@@ -48,9 +47,9 @@ class TodoApp extends React.Component {
             <div className="center">Nothing</div>
           )}
         </div>
-      </React.Fragment>
+      </>
     );
   }
 }
 
-export default TodoApp;
+export default TodoList;
