@@ -1,13 +1,13 @@
 import "./App.css";
 
-import TodoList from "./components/TodoList.component";
+import TodoApp from "./components/TodoApp.component";
 
 const App = () => {
   return (
-    <>
-      <h1>TodoList</h1>
-      <TodoList />
-    </>
+    <div className="container">
+      <h1>Todo App</h1>
+      <TodoApp />
+    </div>
   );
 };
 
